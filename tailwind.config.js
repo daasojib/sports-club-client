@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  themes: ["light", "dark", "cupcake"],
+  themes: ["light", "dark"],
   plugins: [require("daisyui")],
 }
 
