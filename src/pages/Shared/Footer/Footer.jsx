@@ -1,4 +1,4 @@
-import logo from "../../../assets/logo2-removebg-preview.png";
+import logo from "../../../assets/logo.png";
 
 const Footer = () => {
   return (
