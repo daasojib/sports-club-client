@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 function App() {
   const toggleTheme = () => {
@@ -10,10 +11,10 @@ function App() {
     document.querySelector("html").setAttribute("data-theme", theme);
   }, [theme]);
   return (
-    <label className="swap swap-rotate text-3xl">
+    <label className="swap swap-rotate text-2xl">
       <input onClick={toggleTheme} type="checkbox" />
-      <div className="swap-on">Dark</div>
-      <div className="swap-off">Light</div>
+      <div className="swap-on"><FaMoon></FaMoon></div>
+      <div className="swap-off"><FaSun></FaSun></div>
     </label>
   );
 }

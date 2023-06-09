@@ -1,17 +1,18 @@
-import { Link } from 'react-router-dom';
-import logo from '../../../assets/logo.png'
+import { Link } from "react-router-dom";
+import logo from "../../../assets/logo.png";
+import App from "../../../App";
 
 const NavBar = () => {
   const navList = (
     <>
       <li>
-        <a>Item 1</a>
-      </li>
-      <li>
-        <a>Parent</a>
+        <Link to="/instructors ">Instructors</Link>
       </li>
       <li>
         <a>Item 3</a>
+      </li>
+      <li>
+        <App></App>
       </li>
     </>
   );
@@ -44,15 +45,13 @@ const NavBar = () => {
               {navList}
             </ul>
           </div>
-          <Link to='/' className="btn btn-ghost normal-case text-xl font-bold">
-            <img className='w-14' src={logo} alt="" />
+          <Link to="/" className="btn btn-ghost normal-case text-xl font-bold">
+            <img className="w-14" src={logo} alt="" />
             Sports Club
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {navList}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navList}</ul>
         </div>
         <div className="navbar-end">
           <a className="btn">Button</a>
