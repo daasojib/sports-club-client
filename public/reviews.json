@@ -1,0 +1,92 @@
+[
+    {
+      "id": "123456789012345",
+      "name": "John Doe",
+      "details": "A popular sport played with a round ball between two teams.",
+      "ratings": 3.2
+    },
+    {
+      "id": "234567890123456",
+      "name": "Bask",
+      "details": "A team sport played on a rectangular court, usually indoors.",
+      "ratings": 4.2
+    },
+    {
+      "id": "345678901234567",
+      "name": "Tennis",
+      "details": "A racket sport that can be played individually or between two teams.",
+      "ratings": 4.7
+    },
+    {
+      "id": "456789012345678",
+      "name": "Soccer",
+      "details": "A sport played between two teams with a spherical ball.",
+      "ratings": 4.4
+    },
+    {
+      "id": "567890123456789",
+      "name": "Cricket",
+      "details": "A bat-and-ball game played between two teams of eleven players.",
+      "ratings": 4.6
+    },
+    {
+      "id": "678901234567890",
+      "name": "Basketball",
+      "details": "A popular team sport played worldwide.",
+      "ratings": 4.3
+    },
+    {
+      "id": "789012345678901",
+      "name": "Golf",
+      "details": "A precision club-and-ball sport played on a course.",
+      "ratings": 4.8
+    },
+    {
+      "id": "890123456789012",
+      "name": "Swimming",
+      "details": "An individual or team sport involving moving through water.",
+      "ratings": 4.7
+    },
+    {
+      "id": "901234567890123",
+      "name": "Baseball",
+      "details": "A bat-and-ball game played between two teams of nine players.",
+      "ratings": 4.2
+    },
+    {
+      "id": "012345678901234",
+      "name": "Hockey",
+      "details": "A fast-paced team sport played on ice or field.",
+      "ratings": 4.5
+    },
+    {
+      "id": "123456789012345",
+      "name": "Volleyball",
+      "details": "A sport played by two teams on a court divided by a net.",
+      "ratings": 4.3
+    },
+    {
+      "id": "234567890123456",
+      "name": "Badminton",
+      "details": "A racquet sport played by either two opposing players or two opposing pairs.",
+      "ratings": 4.4
+    },
+    {
+      "id": "345678901234567",
+      "name": "Athletics",
+      "details": "A collection of sporting events that involve competitive running, jumping, throwing, and walking.",
+      "ratings": 4.6
+    },
+    {
+      "id": "456789012345678",
+      "name": "Rugby",
+      "details": "A contact team sport that originated in England.",
+      "ratings": 4.2
+    },
+    {
+      "id": "567890123456789",
+      "name": "Cycling",
+      "details": "A sport using bicycles for various purposes such as transportation, recreation, and sport.",
+      "ratings": 4.7
+    }  
+]  

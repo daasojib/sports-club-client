@@ -3,6 +3,7 @@ import SectionHeading from "../../../components/SectionHeading";
 import image from "../../../assets/Categories/Sports.jpg";
 
 
+
 const Featured = () => {
   return (
     <div className="my-20">
@@ -14,7 +15,11 @@ const Featured = () => {
             <p className="-ms-80 mt-56 text-white">
               Champions arent made in the gyms. Champions are made from
               something they have deep inside them -- a desire, a dream, a
-              vision. <span className="font-bold text-xl"> -Muhammad Ali World HeavyWeight Champion Boxer</span>
+              vision.{" "}
+              <span className="font-bold text-xl">
+                {" "}
+                -Muhammad Ali World HeavyWeight Champion Boxer
+              </span>
             </p>
           </div>
         </div>
