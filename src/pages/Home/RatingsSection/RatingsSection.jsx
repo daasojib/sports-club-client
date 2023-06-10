@@ -2,6 +2,7 @@ import SectionHeading from "../../../components/SectionHeading";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 
+
 import "swiper/css";
 import "swiper/css/navigation";
 import { useEffect, useState } from "react";
@@ -11,7 +12,7 @@ import "@smastrom/react-rating/style.css";
 const RatingsSection = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("reviews.json")
+    fetch("http://localhost:5000/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
