@@ -1,120 +1,161 @@
 [
     {
       "_id": "642c155b2c4774f05c36ee94",
+      "seats": "20",
+      "price": 50,
       "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
       "name": "John Doe",
       "email": "johndoe@example.com"
+      
     },
     {
       "_id": "642c155b2c4774f05c36ee9e",
+      "seats": "10",
+      "price": 60,
       "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
       "name": "Jane Smith",
       "email": "janesmith@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36eea6",
+      "seats": "12",
+      "price": 55,
       "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
       "name": "Michael Johnson",
       "email": "michaeljohnson@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36eeaf",
+      "seats": "36",
+      "price": 120,
       "image": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
       "name": "Emily Brown",
       "email": "emilybrown@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee89",
+      "seats": "44",
+      "price": 102,
       "image": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "David Wilson",
       "email": "davidwilson@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee8a",
+      "seats": "50",
+      "price": 100,
       "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
       "name": "Sophia Lee",
       "email": "sophialee@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee96",
+      "seats": "09",
+      "price": 45,
       "image": "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Daniel Smith",
       "email": "danielsmith@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee81",
+      "seats": "100",
+      "price": 99,
       "image": "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Olivia Davis",
       "email": "oliviadavis@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee84",
+      "seats": "40",
+      "price": 80,
       "image": "https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Alexander Johnson",
       "email": "alexanderjohnson@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36eea4",
+      "seats": "70",
+      "price": 150,
       "image": "https://images.unsplash.com/photo-1492447273231-0f8fecec1e3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Isabella Wilson",
       "email": "isabellawilson@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36eea5",
+      "seats": "39",
+      "price": 105,
       "image": "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Liam Thompson",
       "email": "liamthompson@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee87",
+      "seats": "21",
+      "price": 55,
       "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Emma Martinez",
       "email": "emmamartinez@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee83",
+      "seats": "20",
+      "price": 50,
       "image": "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Noah Anderson",
       "email": "noahanderson@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee8d",
+      "seats": "45",
+      "price": 113,
       "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Ava Harris",
       "email": "avaharris@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee8e",
+      "seats": "45",
+      "price": 145,
       "image": "https://images.unsplash.com/photo-1496360166961-10a51d5f367a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Mia Clark",
       "email": "miaclark@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36eeb5",
+      "seats": "25",
+      "price": 210,
       "image": "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Clark Morris",
       "email": "miaclark@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36eeb6",
+      "seats": "45",
+      "price": 99,
       "image": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Watson",
       "email": "miaclark@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee7e",
+      "seats": "20",
+      "price": 50,
       "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Crick",
       "email": "miaclark@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee8b",
+      "seats": "300",
+      "price": 999,
       "image": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "Ada Loveless",
       "email": "miaclark@example.com"
     },
     {
       "_id": "642c155b2c4774f05c36ee8f",
+      "seats": "210",
+      "price": 500,
       "image": "https://images.unsplash.com/photo-1619194617062-5a61b9c6a049?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       "name": "John China",
       "email": "miaclark@example.com"
