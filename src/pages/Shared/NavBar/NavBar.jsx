@@ -15,6 +15,9 @@ const NavBar = () => {
       <li>
         <App></App>
       </li>
+      <li>
+        <Link to='/login'>Login</Link>
+      </li>
     </>
   );
 
