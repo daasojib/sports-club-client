@@ -10,7 +10,7 @@ const NavBar = () => {
         <Link to="/instructors ">Instructors</Link>
       </li>
       <li>
-        <a>Item 3</a>
+        <Link to='/classes'>Classes</Link>
       </li>
       <li>
         <App></App>
@@ -55,7 +55,7 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{navList}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn">Login</a>
         </div>
       </div>
     </>
