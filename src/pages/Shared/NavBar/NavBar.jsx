@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import App from "../../../App";
 import { useContext } from "react";
+import { FaShoppingCart } from 'react-icons/fa';
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
@@ -9,12 +10,15 @@ const NavBar = () => {
 
   const handleLogOut = () => {
     logOut()
-    .then(()=>{})
-    .catch(error=>console.log(error))
-  }
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
 
   const navList = (
     <>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
       <li>
         <Link to="/instructors ">Instructors</Link>
       </li>
@@ -22,10 +26,18 @@ const NavBar = () => {
         <Link to="/classes">Classes</Link>
       </li>
       <li>
-        <App></App>
+        <Link to="/secret">Secret</Link>
       </li>
       <li>
-        <Link to="/login">Login</Link>
+        <Link to="/">
+          <button className="btn gap-2">
+            <FaShoppingCart></FaShoppingCart>
+            <div className="badge badge-secondary">+9</div>
+          </button>
+        </Link>
+      </li>
+      <li>
+        <App></App>
       </li>
     </>
   );
@@ -70,11 +82,26 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{navList}</ul>
         </div>
         <div className="navbar-end">
-          {
-            user ? <><button onClick={handleLogOut} className="btn btn-ghost"><Link to=''>LogOut</Link></button></>
-              :
-              <><button className="btn btn-success"><Link to='/login'>Login</Link></button></>
-          }
+          {user ? (
+            <>
+              <button onClick={handleLogOut} className="btn btn-ghost">
+                <Link to="">LogOut</Link>
+              </button>
+            </>
+          ) : (
+            <>
+              <button className="btn btn-success">
+                <Link to="/login">Login</Link>
+              </button>
+            </>
+          )}
+          {user ? (
+            <>
+              <img className="w-10 h-10 rounded" src={user?.photoURL} alt="" />
+            </>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </>

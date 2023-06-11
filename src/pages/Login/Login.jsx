@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const {
@@ -11,6 +12,10 @@ const Login = () => {
   } = useForm();
 
   const { logIn } = useContext(AuthContext);
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const from = location.state?.from?.pathname || '/';
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,6 +34,7 @@ const Login = () => {
           popup: 'animate__animated animate__fadeOutUp'
         }
       })
+      navigate(from, {replace: true})
     });
   };
 
@@ -82,6 +88,7 @@ const Login = () => {
           <p className="p-5 text-center">
             New here?<Link className="text-primary font-bold" to="/signup"> Create an account</Link>
           </p>
+        <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>
