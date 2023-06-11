@@ -1,8 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
+import useAdmin from "../hooks/useAdmin";
 
 const Dashboard = () => {
-  const isAdmin = true;
-  const isInstructor = true;
+//   const isAdmin = true;
+    const [isAdmin] = useAdmin();
+    const isInstructor = true;
   return (
     <div className="drawer lg:drawer-open bg-orange-100">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -19,17 +21,11 @@ const Dashboard = () => {
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <ul className="menu p-5 w-80 h-full bg-base-300 gap-6 text-base-content">
           {/* Sidebar content here */}
-          {isInstructor ? (
-            <>
-              <li>
-                <NavLink to="addclass">Add a Class</NavLink>
-              </li>
-              <li>
-                <NavLink to="/myclasses">My Classes</NavLink>
-              </li>
-            </>
-          ) : (
-            <>
+          {
+                      isInstructor ? <>
+                      <li><NavLink to='addclass'>Add a Class</NavLink></li>
+                      <li><NavLink to='/myclasses'>My Classes</NavLink></li>
+                      </> :   <>
               <li>
                 <NavLink>User Home</NavLink>
               </li>
@@ -40,14 +36,14 @@ const Dashboard = () => {
                 <NavLink to="/dashboard/myclasses">My Classes</NavLink>
               </li>
             </>
-          )}
+          }
           {isAdmin ? (
             <>
               <li>
                 <NavLink>Manage Classes</NavLink>
               </li>
               <li>
-                <NavLink to="manageusers">Manage Users</NavLink>
+                <NavLink to='manageusers'>Manage Users</NavLink>
               </li>
             </>
           ) : (

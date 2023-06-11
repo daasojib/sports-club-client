@@ -23,13 +23,13 @@ const SignUp = () => {
       console.log(loggedUser);
       updateUser(data.name, data.photoURL)
         .then(() => {
-          const saveUser = {name: data.name, email:data.email}
+          const saveUser = { name: data.name, email: data.email };
           fetch("http://localhost:5000/users", {
-            method: 'POST',
+            method: "POST",
             headers: {
-              'content-type':'application/json'
+              "content-type": "application/json",
             },
-            body: JSON.stringify(saveUser)
+            body: JSON.stringify(saveUser),
           })
             .then((res) => res.json())
             .then((data) => {
@@ -167,7 +167,7 @@ const SignUp = () => {
               Login
             </Link>
           </p>
-        <SocialLogin></SocialLogin>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>
