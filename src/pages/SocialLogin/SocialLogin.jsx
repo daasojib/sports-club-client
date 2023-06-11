@@ -6,21 +6,37 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const SocialLogin = () => {
   const [user, setUser] = useState(null);
+  console.log(user);
   const auth = getAuth(app);
   console.log(app);
   const provider = new GoogleAuthProvider();
-  const navigate = useNavigate()
-  const location = useLocation()
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const from = location.state?.from?.pathname || '/';
+  const from = location.state?.from?.pathname || "/";
 
   const googleSignIn = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         const loggedInUser = result.user;
         console.log(loggedInUser);
+        const saveUser = {
+          name: loggedInUser.displayName,
+          email: loggedInUser.email,
+        };
+        fetch("http://localhost:5000/users", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(saveUser),
+        })
+          .then((res) => res.json())
+          .then(() => {
+              navigate(from, {replace: true});
+          });
         setUser(loggedInUser);
-        navigate(from, {replace: true})
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.log(error.message);
@@ -31,10 +47,7 @@ const SocialLogin = () => {
       <div className="text-center my-5">
         <div className="divider font-bold">Social Login</div>
         <div>
-          <button
-            onClick={googleSignIn}
-            className="btn btn-circle btn-outline"
-          >
+          <button onClick={googleSignIn} className="btn btn-circle btn-outline">
             <FaGoogle className="text-purple-500"></FaGoogle>
           </button>
         </div>
