@@ -1,22 +1,31 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import App from "../../../App";
-
+import { useContext } from "react";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+    .then(()=>{})
+    .catch(error=>console.log(error))
+  }
+
   const navList = (
     <>
       <li>
         <Link to="/instructors ">Instructors</Link>
       </li>
       <li>
-        <Link to='/classes'>Classes</Link>
+        <Link to="/classes">Classes</Link>
       </li>
       <li>
         <App></App>
       </li>
       <li>
-        <Link to='/login'>Login</Link>
+        <Link to="/login">Login</Link>
       </li>
     </>
   );
@@ -49,7 +58,10 @@ const NavBar = () => {
               {navList}
             </ul>
           </div>
-          <Link to="/" className="btn btn-ghost normal-case md:text-xl font-bold">
+          <Link
+            to="/"
+            className="btn btn-ghost normal-case md:text-xl font-bold"
+          >
             <img className="w-14 " src={logo} alt="" />
             Sports Club
           </Link>
@@ -58,7 +70,11 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{navList}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-sm">Login</a>
+          {
+            user ? <><button onClick={handleLogOut} className="btn btn-ghost"><Link to=''>LogOut</Link></button></>
+              :
+              <><button className="btn btn-success"><Link to='/login'>Login</Link></button></>
+          }
         </div>
       </div>
     </>

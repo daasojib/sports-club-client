@@ -2,17 +2,17 @@ import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm();
 
   const { logIn } = useContext(AuthContext);
 
-  const onSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
@@ -20,6 +20,15 @@ const Login = () => {
     logIn(email, password).then((data) => {
       const user = data.user;
       console.log(user);
+      Swal.fire({
+        title: 'Login Successful',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
     });
   };
 
@@ -35,7 +44,7 @@ const Login = () => {
           </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form onSubmit={handleSubmit(onSubmit)} className="card-body">
+          <form onSubmit={handleSubmit} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
