@@ -1,0 +1,42 @@
+[
+    {
+      "className": "Badminton",
+      "classImage": "https://i.ibb.co/DVnV6V6/slide4.jpg",
+      "instructorName": "John Doe",
+      "instructorEmail": "john.doe@example.com",
+      "availableSeats": 10,
+      "price": 20
+    },
+    {
+      "className": "Cricket",
+      "classImage": "https://i.ibb.co/YpKCSwQ/slide5.jpg",
+      "instructorName": "Jane Smith",
+      "instructorEmail": "jane.smith@example.com",
+      "availableSeats": 8,
+      "price": 15
+    },
+    {
+      "className": "Football",
+      "classImage": "https://i.ibb.co/6wVkyXn/slide6.jpg",
+      "instructorName": "Alex Brown",
+      "instructorEmail": "alex.brown@example.com",
+      "availableSeats": 12,
+      "price": 18
+    },
+    {
+      "className": "Basketball",
+      "classImage": "https://i.ibb.co/FYW5y8m/slide1.jpg",
+      "instructorName": "Alex Brown",
+      "instructorEmail": "alex.brown@example.com",
+      "availableSeats": 12,
+      "price": 18
+    },
+    {
+      "className": "Cycling",
+      "classImage": "https://i.ibb.co/KGsYKs8/slide3.jpg",
+      "instructorName": "Alex Brown",
+      "instructorEmail": "alex.brown@example.com",
+      "availableSeats": 12,
+      "price": 18
+    }
+]
