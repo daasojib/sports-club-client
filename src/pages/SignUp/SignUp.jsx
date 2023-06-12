@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import { useState } from "react";
+import { FaEye } from "react-icons/fa";
 
 const SignUp = () => {
   const {
@@ -13,8 +15,13 @@ const SignUp = () => {
     formState: { errors },
   } = useForm();
 
+  const [passShow, setPassShow] = useState(false);
   const { createUser, updateUser } = useContext(AuthContext);
   const navigate = useNavigate();
+
+  const togglePass = () => {
+    setPassShow(!passShow);
+  };
 
   const onSubmit = (data) => {
     console.log(data);
@@ -114,7 +121,7 @@ const SignUp = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="password"
+                type={passShow ? "text" : "password"}
                 name="password"
                 {...register("password", {
                   required: true,
@@ -124,6 +131,9 @@ const SignUp = () => {
                 placeholder="Password"
                 className="input input-bordered"
               />
+              <button onClick={togglePass}>
+                <FaEye className="ms-auto -mt-8 mr-4"></FaEye>
+              </button>
               {errors.password?.type === "required" && (
                 <p className="text-red-500">Password is required</p>
               )}
@@ -143,12 +153,15 @@ const SignUp = () => {
                 <span className="label-text">Confirm Password</span>
               </label>
               <input
-                type="password"
+                type={passShow ? "text" : "password"}
                 name="confirmPassword"
                 {...register("password", { required: true })}
                 placeholder="Confirm Password"
                 className="input input-bordered"
               />
+              <button onClick={togglePass}>
+                <FaEye className="ms-auto -mt-8 mr-4"></FaEye>
+              </button>
               {errors.password?.type === "required" && (
                 <p className="text-red-500">Password is required</p>
               )}
