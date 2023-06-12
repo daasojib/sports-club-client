@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import App from "../../../App";
 import { useContext } from "react";
-import { FaShoppingCart } from 'react-icons/fa';
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
@@ -30,10 +29,7 @@ const NavBar = () => {
       </li>
       <li>
         <Link to="/dashboard/myclasses">
-          <button className="btn gap-2">
-            <FaShoppingCart></FaShoppingCart>
-            <div className="badge badge-secondary">+9</div>
-          </button>
+          Dashboard
         </Link>
       </li>
       <li>

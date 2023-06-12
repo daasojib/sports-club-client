@@ -10,6 +10,12 @@ import Secret from "../pages/Shared/Secret/Secret";
 import Dashboard from "../Layout/Dashboard";
 import MyClasses from "../pages/Dashboard/MyClasses/MyClasses";
 import ManageUsers from "../pages/Dashboard/ManageUsers/ManageUsers";
+import AddClass from "../pages/Dashboard/AddClass/AddClass";
+import InstructorRoute from "./InstructorRoute";
+import AdminRoute from "./AdminRoute";
+import Payment from "../pages/Dashboard/Payment/Payment";
+
+
 
 export const router = createBrowserRouter([
   {
@@ -51,8 +57,16 @@ export const router = createBrowserRouter([
         element: <MyClasses></MyClasses>
       },
       {
+        path: 'payment',
+        element: <Payment></Payment>
+      },
+      {
         path: 'manageusers',
-        element: <ManageUsers></ManageUsers>
+        element: <AdminRoute><ManageUsers></ManageUsers></AdminRoute>
+      },
+      {
+        path: 'addclass',
+        element: <InstructorRoute><AddClass></AddClass></InstructorRoute>
       }
     ]
   }

@@ -2,7 +2,7 @@
 const MyClasses = () => {
     return (
         <div>
-            <h2 className="text-5xl">My classes</h2>
+            <h2 className="text-5xl">My claasses</h2>
         </div>
     );
 };
